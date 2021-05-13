@@ -58,6 +58,22 @@ void Pokemon::info() {
 
 }
 
+std::string Pokemon::getName() const {
+    return name_;
+}
+
+std::string Pokemon::getHeight() const {
+    return height_;
+}
+std::string Pokemon::getWeight() const {
+    return weight_;
+}
+
+std::string Pokemon::getType() const {
+    return type_;
+}
+
+
 void Pokemon::putDash(int num) {
     for(int i = 0; i < num; i++) {
         std::cout << "-";
