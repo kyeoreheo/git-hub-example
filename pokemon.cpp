@@ -13,26 +13,6 @@ Pokemon::Pokemon(std::string name,
 
 }
 
-std::string getName() const {
-    std::string temp = name_;
-    return temp;
-}
-
-std::string getHeight() const {
-    std::string temp = height_;
-    return temp;
-}
-
-std::string getWeight() const {
-    std::string temp = weight_;
-    return temp;
-}
-
-std::string getType() const {
-    std::string temp = type_;
-    return temp;
-}
-
 Pokemon::~Pokemon() {
 
 }
