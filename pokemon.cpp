@@ -65,6 +65,17 @@ std::string Pokemon::repeatChar(char c, int length) const {
     return temp;
 }
 
+void Pokemon::displayName() {
+    int dashLength = (20 - name_.size()) / 2;
+    std::cout << repeatChar('-', dashLength);
+    std::cout << name_;
+    std::cout << repeatChar('-', dashLength);
+    if((name_.size() + dashLength * 2) < 20) {
+        std::cout << "-";
+    }
+    std::cout << std::endl;
+}
+
 std::string Pokemon::getName() const {
     return name_;
 }
