@@ -1,5 +1,13 @@
 #include "pokemon.hpp"
 
+Pokemon::Pokemon() {
+    name_;
+    height_;
+    weight_;
+    type_;
+    friends_;
+}
+
 Pokemon::Pokemon(std::string name,
             std::string height,
             std::string weight,
