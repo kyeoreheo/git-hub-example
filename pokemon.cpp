@@ -49,6 +49,14 @@ void Pokemon::info() {
 
 }
 
+std::string Pokemon::repeatChar(char c, int length) const {
+    std::string temp = "";
+    for(int i = 0; i < length; i++) {
+        temp += c;
+    }
+    return temp;
+}
+
 std::string Pokemon::getName() const {
     return name_;
 }
