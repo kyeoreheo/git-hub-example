@@ -13,26 +13,6 @@ Pokemon::Pokemon(std::string name,
 
 }
 
-std::string getName() const {
-    std::string temp = name_;
-    return temp;
-}
-
-std::string getHeight() const {
-    std::string temp = height_;
-    return temp;
-}
-
-std::string getWeight() const {
-    std::string temp = weight_;
-    return temp;
-}
-
-std::string getType() const {
-    std::string temp = type_;
-    return temp;
-}
-
 Pokemon::~Pokemon() {
 
 }
@@ -77,6 +57,22 @@ void Pokemon::info() {
     std::cout << std::endl;
 
 }
+
+std::string Pokemon::getName() const {
+    return name_;
+}
+
+std::string Pokemon::getHeight() const {
+    return height_;
+}
+std::string Pokemon::getWeight() const {
+    return weight_;
+}
+
+std::string Pokemon::getType() const {
+    return type_;
+}
+
 
 void Pokemon::putDash(int num) {
     for(int i = 0; i < num; i++) {
